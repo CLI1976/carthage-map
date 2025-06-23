@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset=utf-8 />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
-    <title>Leaflet Bing Maps Layer</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="leaflet-bing-layer.js"></script>
-    <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
-    </style>
+  <title>簡單範例</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 載入 Leaflet CSS -->
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+
+  <script src="leaflet/leaflet.js"></script>
+  <script src="leaflet-bing-layer/leaflet-bing-layer.js"></script>
+  <style>
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      .label-text {
+      /* background: rgba(26, 2, 2, 0.7); 設定背景顏色 */
+      padding: 2px 4px; /* 上下2px，左右4px內邊距 */
+      border-radius: 4px; /* 邊框圓角4px */
+      font-size: 12px;
+      color: whitesmoke;
+      text-shadow: black;
+  }
+  </style>
 </head>
-
 <body>
-    <div id='map'></div>
 
-    <script>
-    var BING_KEY = 'AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L'
+<div id="map"></div>
 
-    var map = L.map('map').setView([51.505, -0.09], 13)
+<!-- 載入 Leaflet JS -->
 
-    var bingLayer = L.tileLayer.bing(BING_KEY).addTo(map)
-    </script>
+<script>
+  var BING_KEY = 'AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L'
+
+  // 建立地圖，中心座標是台北101
+  var map = L.map('map').setView([35.331985, 25.172382], 6);
+  var bingLayer = L.tileLayer.bing(BING_KEY).addTo(map)
+  // 加載免費 OpenStreetMap 圖磚
+
+    // 加入標註點
+    var points = [
+  { name: "大馬士革", lat: 33.502674, lon: 36.303592 },
+  { name: "克諾索斯", lat: 35.331985, lon: 25.172382 },
+  { name: "卡利亞里", lat: 39.224569, lon: 9.120498 },
+  { name: "阿萊里亞", lat: 42.100969, lon: 9.50502 },
+  { name: "賽普勒斯島", lat: 35.027076, lon: 33.188968 },
+  { name: "塔羅斯", lat: 39.895676, lon: 8.559681 },
+  { name: "諾拉", lat: 39.00836, lon: 9.000335 },
+  { name: "突尼斯", lat: 36.813649, lon: 10.156213 },
+  { name: "阿克拉加斯", lat: 37.295756, lon: 13.569185 },
+  { name: "希梅拉", lat: 37.982836, lon: 13.845173 },
+  { name: "塔普蘇斯", lat: 35.62193, lon: 11.031 },
+  { name: "比布魯斯", lat: 34.300797, lon: 35.690418 },
+  { name: "利基翁", lat: 38.100116, lon: 15.6453 },
+  { name: "帕諾爾莫斯", lat: 38.109177, lon: 13.369671 },
+  { name: "奧爾比亞", lat: 40.918853, lon: 9.494033 },
+  { name: "伊比薩島", lat: 38.970082, lon: 1.441227 },
+  { name: "西頓", lat: 33.553597, lon: 35.369068 },
+  { name: "科莫斯", lat: 35.077084, lon: 24.749752 },
+  { name: "凱特翁", lat: 35.006277, lon: 33.718372 },
+  { name: "貝留圖斯(貝魯特)", lat: 33.888629, lon: 35.495479 },
+  { name: "凱撒利亞", lat: 32.505632, lon: 34.894245 },
+  { name: "迦太基", lat: 36.852926, lon: 10.323649 },
+  { name: "泰爾", lat: 33.270893, lon: 35.203472 },
+  { name: "莫塔", lat: 36.707803, lon: 4.046336 },
+  { name: "馬耳他", lat: 35.899718, lon: 14.514553 },
+  { name: "加的斯", lat: 36.529821, lon: -6.29243 },
+  { name: "馬賽", lat: 43.296482, lon: 5.36978 },
+  { name: "奧斯提亞", lat: 41.750888, lon: 12.283333 },
+  { name: "科林斯", lat: 37.939414, lon: 22.932223 },
+  { name: "開羅", lat: 30.04442, lon: 31.235712 },
+  { name: "底比斯", lat: 25.717508, lon: 32.657299 },
+  { name: "亞歷山卓", lat: 31.200092, lon: 29.918739 },
+  { name: "底爾", lat: 33.271429, lon: 35.203491 },
+  { name: "西西里", lat: 37.599994, lon: 14.015355 },
+  { name: "西班牙", lat: 40.463667, lon: -3.74922 },
+  { name: "阿爾及爾", lat: 36.737232, lon: 3.086472 },
+  { name: "黎波里", lat: 32.887209, lon: 13.191338 },
+  { name: "巴塞隆納", lat: 41.385064, lon: 2.173404 },
+  { name: "迦太基城", lat: 36.852926, lon: 10.323649 },
+  { name: "蘇薩", lat: 35.825603, lon: 10.63699 },
+  { name: "凱帕", lat: 35.082233, lon: 33.272571 },
+  { name: "佩拉", lat: 40.758056, lon: 22.524444 },
+  { name: "哈德魯梅圖姆", lat: 35.825603, lon: 10.63699 },
+  { name: "卡帕爾", lat: 35.082233, lon: 33.272571 }
+];
+    
+    var smallIcon = L.icon({
+      iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+      iconSize: [15, 24],    // 改小：原本是 [25, 41]
+      iconAnchor: [7, 24],   // 調整 anchor，確保圖標底部對準座標點
+      shadowSize: [30, 30]   // 陰影也可調小
+    });
+
+  points.forEach(function(pt) {
+    // 加圖標
+    L.marker([pt.lat, pt.lon], { icon: smallIcon }).addTo(map);
+    // 加標籤
+    L.marker([pt.lat, pt.lon], {
+      icon: L.divIcon({
+        className: 'label-text',
+        html: pt.name,
+        iconSize: [80, 20]
+      })
+    }).addTo(map);
+  });
+</script>
+
 </body>
 </html>
