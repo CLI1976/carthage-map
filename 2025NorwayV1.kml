@@ -944,9 +944,8 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>卡伯爾沃格 Kabelvåg
-</name>
-        <description><![CDATA[羅弗敦群島最古⽼的⼩鎮。早在⽯器時代，就<br>發現了⼈類定居的痕跡。維京時代(西元793年1066年)卡伯爾沃格⼀直是⼀個繁榮的漁村，<br>貿易重鎮。因為其地理位置優越，靠近鱈⿂在<br>冬季遷徙產卵的地⽅。擁有群島第⼀座教堂，<br>最多可容納1200⼈。]]></description>
+        <name>卡伯爾沃格 Kabelvag</name>
+        <description><羅弗敦群島最古⽼的⼩鎮。早在⽯器時代，就<br>發現了⼈類定居的痕跡。維京時代(西元793年-1066年)卡伯爾沃格⼀直是⼀個繁榮的漁村，<br>貿易重鎮。因為其地理位置優越，靠近鱈⿂在<br>冬季遷徙產卵的地⽅。擁有群島第⼀座教堂，<br>最多可容納1200⼈。></description>
         <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
