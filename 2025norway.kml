@@ -577,6 +577,146 @@
         <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
+    <Style id="line-F48FB1-5069-nodesc-normal">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>5.069</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-F48FB1-5069-nodesc-highlight">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>7.6035</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-F48FB1-5069-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F48FB1-5069-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F48FB1-5069-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-F48FB1-5263-nodesc-normal">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>5.263</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-F48FB1-5263-nodesc-highlight">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>7.8945</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-F48FB1-5263-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F48FB1-5263-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F48FB1-5263-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-F48FB1-5456-nodesc-normal">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>5.456</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-F48FB1-5456-nodesc-highlight">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>8.184</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-F48FB1-5456-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F48FB1-5456-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F48FB1-5456-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-F48FB1-5650-nodesc-normal">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>5.65</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-F48FB1-5650-nodesc-highlight">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>8.475</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-F48FB1-5650-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F48FB1-5650-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F48FB1-5650-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFFF8D-1200-nodesc-normal">
+      <LineStyle>
+        <color>ff8dffff</color>
+        <width>1.2</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFFF8D-1200-nodesc-highlight">
+      <LineStyle>
+        <color>ff8dffff</color>
+        <width>1.8</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFFF8D-1200-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFFF8D-1200-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFFF8D-1200-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
     <Folder>
       <name>Norway Tour</name>
       <Placemark>
@@ -806,9 +946,7 @@
       <Placemark>
         <name>卡伯爾沃格 Kabelvåg
 </name>
-        <description><![CDATA[
-羅弗敦群島最古老的小鎮。早在石器時代，就發現了人類定居的痕跡。維京時代(西元793年-1066年)卡伯爾沃格一直是一個繁榮的漁村，貿易重鎮。因為其地理位置優越，靠近鱈魚在冬季遷徙產卵的地方。擁有群島第一座教堂，最多可容納1200人。
-]]></description>
+        <description><![CDATA[羅弗敦群島最古⽼的⼩鎮。早在⽯器時代，就<br>發現了⼈類定居的痕跡。維京時代(西元793年1066年)卡伯爾沃格⼀直是⼀個繁榮的漁村，<br>貿易重鎮。因為其地理位置優越，靠近鱈⿂在<br>冬季遷徙產卵的地⽅。擁有群島第⼀座教堂，<br>最多可容納1200⼈。]]></description>
         <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
@@ -954,11 +1092,108 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Day2</name>
+        <styleUrl>#line-F48FB1-5263-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            11.1116789,60.2080236,0
+            13.6127327,68.1413089,0
+            13.6220024,68.1349167,0
+            13.6127327,68.1415645,0
+            13.5993431,68.1354282,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Day4</name>
+        <styleUrl>#line-FFFF8D-1200-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            13.6109614,68.1450805,0
+            13.1313396,67.9475738,0
+            13.1323052,67.9475939,0
+            13.131361,67.9475738,0
+            13.1314147,67.947892,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Day 7</name>
+        <styleUrl>#line-F48FB1-5650-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            16.6786363,68.4903865,0
+            10.9204435,63.4556027,0
+            10.9328032,63.4572136,0
+            10.9206152,63.4556027,0
+            10.9163237,63.4595915,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Day 8</name>
+        <styleUrl>#line-F48FB1-5456-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            10.9133251,63.449826,0
+            5.6329724,58.8809541,0
+            5.6439588,58.8831719,0
+            5.6329724,58.8811315,0
+            5.6316849,58.887696,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Day 11</name>
+        <styleUrl>#line-F48FB1-5069-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            5.6329222,58.8774587,0
+            11.0839899,60.1941483,0
+            11.0767801,60.1825419,0
+            11.0833032,60.193807,0
+            11.0630472,60.1984143,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>伊斯坦堡機場</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            28.7301397,41.2768187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>臺灣桃園國際機場</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            121.2311589,25.0804902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>廊曼國際機場</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            100.6054823,13.9150135,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     <Folder>
-      <name>從Eliassen Rorbuer到Scandic Harstad的路線</name>
+      <name>E10景觀公路</name>
       <Placemark>
-        <name>從Eliassen Rorbuer到Scandic Harstad的路線</name>
+        <name>E10景觀公路</name>
         <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -10015,14 +10250,28 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>從Preikestolvegen 5, 4105 Jørpeland, 挪威到Vei Uten Navn, 4129 Songesand, 挪威的路線</name>
+      <name>聖壇岩健行</name>
       <Placemark>
-        <name>從Preikestolvegen 5, 4105 Jørpeland, 挪威到Vei Uten Navn, 4129 Songesand, 挪威的路線</name>
+        <name>聖壇岩健行</name>
         <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
-            6.13991,58.99148,0
+            6.13822,58.9911,0
+            6.13823,58.99106,0
+            6.13851,58.99106,0
+            6.13858,58.99106,0
+            6.13863,58.99106,0
+            6.13872,58.99106,0
+            6.13886,58.99106,0
+            6.13916,58.99111,0
+            6.13926,58.99113,0
+            6.13944,58.99115,0
+            6.13956,58.99121,0
+            6.13964,58.99125,0
+            6.13971,58.9913,0
+            6.13977,58.99135,0
+            6.13988,58.99143,0
             6.13994,58.99154,0
             6.13997,58.99163,0
             6.13997,58.99172,0
@@ -10591,11 +10840,11 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Preikestolvegen 5, 4105 Jørpeland, 挪威</name>
+        <name>Preikestolen hiking starting point</name>
         <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
-            6.1399097,58.991481,0
+            6.1382241,58.9911003,0
           </coordinates>
         </Point>
       </Placemark>
